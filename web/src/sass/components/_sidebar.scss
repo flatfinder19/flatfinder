@@ -1,0 +1,11 @@
+.Sidebar {
+  font-size: 30px;
+  color:white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 110rem;
+  background-color: $color-sidebar;
+  width: 15rem;
+}
