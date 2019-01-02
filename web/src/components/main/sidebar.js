@@ -4,8 +4,8 @@ class Map extends Component {
   state = {  }
   render() { 
     return ( 
-      <div>
-        <p> Map ddgoes here </p>
+      <div className="Sidebar">
+        <p>Sidebar </p>
       </div>
      );
   }

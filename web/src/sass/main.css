@@ -4,6 +4,16 @@
 .test {
   color: pink; }
 
+.Sidebar {
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 30rem;
+  background-color: #173f5f;
+  width: 10rem; }
+
 body {
   margin: 0;
   padding: 0;

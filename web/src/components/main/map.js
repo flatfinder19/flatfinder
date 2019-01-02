@@ -5,7 +5,7 @@ class Map extends Component {
   render() { 
     return ( 
       <div>
-        <p> Map ddsssssgoes here </p>
+        <p> Map goes here </p>
       </div>
      );
   }
