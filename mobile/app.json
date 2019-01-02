@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "flatfinder",
-    "slug": "flatfinder",
+    "name": "mobile",
+    "slug": "mobile",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
