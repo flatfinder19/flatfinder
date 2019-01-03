@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
-import keys from '../../keys.js';
+//import keys from '../../keys.js';
 import Searchbar from './searchbar.js';
 
-//const keys = process.env.REACT_APP_GOOGLE_KEY;
+const keys = { googleKey: process.env.REACT_APP_GOOGLE_KEY };
+console.log(keys);
 const style = {
   width: '90%',
   height: '100%',
-  loadLocation: false,
+  loadLocation: false
 };
 
 class MapContainer extends Component {
@@ -28,7 +29,7 @@ class MapContainer extends Component {
             zoom={9}
             initialCenter={{
               lat: 40.854885,
-              lng: -88.081807,
+              lng: -88.081807
             }}
           >
             <Marker onClick={this.onMarkerClick} name={'Current location'} />
@@ -51,5 +52,5 @@ class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: keys.googleKey,
+  apiKey: keys.googleKey
 })(MapContainer);

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AuthProvider, { AuthContext } from './contexts/AuthProvider';
 
 import Map from './components/main/main';
+import Login from './components/auth/login';
 
 class App extends Component {
   render() {
@@ -22,7 +23,8 @@ class App extends Component {
                   path="/register"
                   render={props => <Register {...props} context={context} />}
                 /> */}
-                <Route path="/" component={Map} />
+                <Route path="/login" component={Login} />
+                <Route exact path="/" component={Map} />
               </React.Fragment>
             )}
           </AuthContext.Consumer>

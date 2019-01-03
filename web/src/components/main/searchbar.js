@@ -11,11 +11,12 @@ class Searchbar extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="searchbox">
+      <div className="Search">
+        <div className="Search-searchbox">
           <Fa icon="search" />
           <p style={{ marginLeft: '1rem', fontSize: '20px'}}>Search box</p>
         </div>
+          <p className="Search-results">Save search results</p>
       </div>
     );
   }
