@@ -11,9 +11,7 @@
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.2",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "react-scripts": "2.1.2"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
@@ -25,6 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
+
   "eslintConfig": {
     "extends": "react-app"
   },

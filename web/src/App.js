@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import AuthProvider, { AuthContext } from "./contexts/AuthProvider";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import AuthProvider, { AuthContext } from './contexts/AuthProvider';
 
-import Map from "./components/main/main";
+import Map from './components/main/main';
 
+console.log(process.env.REACT_APP_GOOGLE_KEY);
 class App extends Component {
   render() {
     return (
