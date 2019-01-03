@@ -181,11 +181,6 @@
   font-size: 1.6rem;
   margin-left: 1.5rem; }
 
-.icon-color {
-  color: #EA4336;
-  margin-right: '1rem';
-  background: 'EA4336'; }
-
 .Map {
   flex-grow: 1;
   display: flex;
