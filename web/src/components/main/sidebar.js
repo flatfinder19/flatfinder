@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import FlatFeatures from './flatFeatures';
+
 
 class Map extends Component {
   state = {  }
@@ -6,6 +8,7 @@ class Map extends Component {
     return ( 
       <div className="Sidebar">
         <p>Sidebar </p>
+       <FlatFeatures/>
       </div>
      );
   }
