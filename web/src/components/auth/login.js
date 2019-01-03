@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { NavLink, Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // import logo from './google.png';
 
@@ -32,14 +31,14 @@ class SignIn extends Component {
             <h1 className="signin-flatfinder">Flatfinder</h1>
             <h1 className="signin--header">Sign In</h1>
             <div className="signin--buttons">
-              <button className="signin--buttons__facebook">
+              {/* <button className="signin--buttons__facebook">
                 <i className="fab fa-facebook-square" />facebook
-              </button>
-              <a href="/auth/google" className="signin--buttons__google">
+              </button> */}
+              {/* <a href="/auth/google" className="signin--buttons__google"> */}
                 {/* <button className="signin--buttons__google" onClick={e => this.loginGoogle(e)}> */}
                 {/* <img src={logo} alt="google logo" className="signin--buttons__google--logo" />Google */}
                 {/* </button> */}
-              </a>
+              {/* </a> */}
             </div>
             {this.state.requestError ? <h5>Invalid Email or Password</h5> : null}
             <form className="signin--signin">

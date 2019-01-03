@@ -77,9 +77,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2e2e2e; }
+  background-color: white; }
   .signin--box {
-    background-color: #ffffff;
+    background-color: #303030;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -90,7 +90,8 @@
     box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.294);
     position: relative; }
   .signin--header {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    color: grey; }
   .signin--buttons {
     margin-bottom: 1.5rem;
     margin-left: 1rem; }
@@ -121,7 +122,8 @@
     font-size: 1.2rem;
     margin-bottom: 2rem; }
   .signin--signin {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    color: #EA4336; }
     .signin--signin__username {
       padding: .5rem;
       height: 2rem;
@@ -137,6 +139,7 @@
       margin-bottom: .5rem;
       border: 0.1rem solid #dfdfdf; }
     .signin--signin__button {
+      cursor: pointer;
       padding: .5rem;
       height: 3rem;
       width: 100%;
@@ -147,7 +150,8 @@
       border: 0.5px black; }
   .signin--notmember {
     font-size: 1rem;
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    color: #EA4336; }
 
 .fa-facebook-square {
   font-size: 1.5rem;
@@ -157,7 +161,8 @@
   margin-left: 0.9rem;
   margin-top: -3.3rem;
   margin-bottom: 4rem;
-  color: grey; }
+  font-size: 2.5rem;
+  color: white; }
 
 .home-link {
   display: flex;
