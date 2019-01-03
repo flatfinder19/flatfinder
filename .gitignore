@@ -60,5 +60,10 @@ typings/
 # next.js build output
 .next
 
+# lock files ignored
+Pipfile
+yarn.lock 
+package-lock.json
+
 # test folder
 Test
