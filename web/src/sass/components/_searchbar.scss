@@ -1,0 +1,22 @@
+.Search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // background-color: red;
+  &-searchbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60rem;
+    // background-color: red;
+    border-bottom: solid rgba(128, 128, 128, 0.81) 0.3px;
+    line-height: 0;
+    margin-bottom: 2rem;
+  }
+  &-results {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: $color-icon;
+    cursor: pointer;
+  }
+}

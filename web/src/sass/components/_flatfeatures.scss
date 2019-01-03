@@ -1,0 +1,8 @@
+.FlatFeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+      &>div {
+        font-size: 1.6rem; 
+  }
+}

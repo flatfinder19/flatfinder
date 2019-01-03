@@ -1,0 +1,191 @@
+.App {
+  text-align: center; }
+
+.test {
+  color: pink; }
+
+.Sidebar {
+  font-size: 30px;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 110rem;
+  background-color: #303030;
+  min-width: 19rem; }
+  .Sidebar-title {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-left: -1rem; }
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  margin-left: 1.5rem; }
+
+.icon-color {
+  color: #EA4336;
+  margin-right: '1rem';
+  background: 'EA4336'; }
+
+.Map {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 5%; }
+
+.loadDetail {
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  background-color: lightBlue; }
+
+.Search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .Search-searchbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60rem;
+    border-bottom: solid rgba(128, 128, 128, 0.81) 0.3px;
+    line-height: 0;
+    margin-bottom: 2rem; }
+  .Search-results {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: #EA4336;
+    cursor: pointer; }
+
+.FlatFeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .FlatFeatures > div {
+    font-size: 1.6rem; }
+
+.signin {
+  width: 100%;
+  height: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e; }
+  .signin--box {
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 60rem;
+    border-radius: 2%;
+    box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.294);
+    position: relative; }
+  .signin--header {
+    margin-bottom: 2rem; }
+  .signin--buttons {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem; }
+    .signin--buttons__facebook {
+      border: none;
+      font-size: 1.2rem;
+      background-color: #435c94;
+      color: white;
+      height: 3.5rem;
+      width: 9rem;
+      margin-right: 1.5rem;
+      border-radius: .5rem; }
+    .signin--buttons__google {
+      font-size: 1.2rem;
+      color: #8b8b8b;
+      height: 3.8rem;
+      width: 10rem;
+      margin-right: 1.5rem;
+      border-radius: .5rem;
+      border: 0.7px solid rgba(105, 105, 105, 0.384);
+      padding: 1rem; }
+      .signin--buttons__google--logo {
+        padding: none;
+        height: 1.3rem;
+        align-self: auto;
+        margin-right: .5rem; }
+  .signin--orsign {
+    font-size: 1.2rem;
+    margin-bottom: 2rem; }
+  .signin--signin {
+    font-size: 1.2rem; }
+    .signin--signin__username {
+      padding: .5rem;
+      height: 2rem;
+      width: 20rem;
+      border-radius: .5rem;
+      margin-bottom: .5rem;
+      border: 0.1rem solid #dfdfdf; }
+    .signin--signin__password {
+      padding: .5rem;
+      height: 2rem;
+      width: 20rem;
+      border-radius: .5rem;
+      margin-bottom: .5rem;
+      border: 0.1rem solid #dfdfdf; }
+    .signin--signin__button {
+      padding: .5rem;
+      height: 3rem;
+      width: 100%;
+      background-color: black;
+      color: white;
+      font-size: 1rem;
+      border-radius: .5rem;
+      border: 0.5px black; }
+  .signin--notmember {
+    font-size: 1rem;
+    margin-top: 5rem; }
+
+.fa-facebook-square {
+  font-size: 1.5rem;
+  margin-right: .5rem; }
+
+.signin-flatfinder {
+  margin-left: 0.9rem;
+  margin-top: -3.3rem;
+  margin-bottom: 4rem;
+  color: grey; }
+
+.home-link {
+  display: flex;
+  justify-content: center; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat',sans-serif;
+  background-size: fill; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: #818181; }
+
+ul {
+  list-style: none; }
+
+button:focus {
+  outline: 0;
+  border-radius: 15px; }
+
+.active {
+  color: #60a5ff; }
