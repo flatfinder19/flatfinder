@@ -10,7 +10,7 @@ class PersonalSearchResultSerializer(serializers.HyperlinkedModelSerializer):
 
     def create(self, validated_data):
         user = self.context["request"].user
-        search_result = PersonalSearchResult.ojects.create(
+        search_result = PersonalSearchResult.objects.create(
             user=user, **validated_data)
         return search_result
 
