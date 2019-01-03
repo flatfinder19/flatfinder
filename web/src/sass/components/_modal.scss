@@ -1,0 +1,181 @@
+.Modal {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  // margin-left: -15%;
+  margin-top: -5%;
+}
+
+.Modal-layout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 75rem;
+  background: rgba(50, 23, 23, 0.351);
+}
+
+
+.Modal-layout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 75rem;
+  background: rgba(50, 23, 23, 0.351);
+}
+
+.Modal-box {
+  margin-top: 10rem;
+  height: 55%;
+  width: 45rem;
+  background: white;
+  -webkit-animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  transition: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.Slideshow {
+  display: flex;
+  height: 55%;
+  width: 100%;
+}
+
+.Slideshow-lunch {
+  margin-left: 22%;
+  max-height: 100%;
+  background-color: white;
+}
+
+.Slideshow-img {
+  max-width: 100%;
+}
+
+.Slideshow-arrows {
+  margin-left: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-items: center;
+  text-align: center;
+  margin-left: 0;
+}
+
+.Slideshow-arrows div {
+  z-index: 3;
+  color: white;
+  background-color: rgba(34, 34, 34, 0.482);
+  margin-top: 0.8rem;
+}
+
+.adjust {
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.opposite {
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.Slideshow-details {
+  height: 40%;
+  color: black;
+  font-size: 2rem;
+}
+
+.SlideShow-title {
+  height: 4rem;
+  user-select: none;
+  margin-left: 1rem;
+
+}
+
+.Slideshow-details-sub {
+  color: #919498;
+  font-size: 1rem;
+  margin-top: -2.2rem;
+}
+
+.hr {
+  border: 0.3px solid rgb(225, 225, 225);
+  width: 95%;
+  margin-left: 0;
+}
+
+.Slideshow-description {
+  height: 7rem;
+  overflow-y: scroll;
+  font-size: 1rem;
+  margin-left: 1rem;
+
+}
+
+.Slideshow-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+.Slideshow-viewsite {
+  margin-left: 1rem;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  cursor: pointer;
+  width: 12rem;
+  height: 3rem;
+  background: #74F9D9;
+}
+
+.Slideshow-viewcode {
+  margin-left: -12rem;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  cursor: pointer;
+  width: 12rem;
+  height: 3rem;
+  background: rgb(26, 26, 26);
+}
+
+.leave-modal {
+  color: #919498;
+  cursor: pointer;
+  line-height: 0;
+  margin-right: 1rem;
+}
+
+.Loader {
+  text-align: center;
+  height: 50%;
+  width: 100%;
+  color: black;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

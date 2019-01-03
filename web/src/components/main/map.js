@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react'
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import onClickOutside from 'react-onclickoutside';
 import keys from '../../keys.js';
 
 import Searchbar from './searchbar.js';
+import Modal from './Modal.js';
 
 const style = {
   // width: '100%',
@@ -18,7 +20,8 @@ class MapContainer extends Component {
     this.setState({loadLocation: true})
   };
 
-  render() { 
+  render() {
+    const { loadLocation } = this.state; 
     return ( 
       <div className="Map">
         <Searchbar />
@@ -43,12 +46,9 @@ class MapContainer extends Component {
             </InfoWindow> */}
           </Map>
         </div>
-        
-        {/* <div style={{position: 'relative'}}>
-          <div className = "loadDetail">
-            <p> Details </p> 
-          </div>
-        </div> */}
+        {loadLocation ?
+          <Modal />
+        : null}
       </div>
      );
   }
