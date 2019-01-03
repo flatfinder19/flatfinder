@@ -1,1 +1,1 @@
-web: gunicorn server/flatfinder.wsgi
+web: cd server && gunicorn flatfinder.wsgi
