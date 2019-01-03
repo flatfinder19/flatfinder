@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import onClickOutside from 'react-onclickoutside';
+import { Link } from 'react-router-dom';
 
 class Modal extends Component {
   state = {  }
@@ -38,7 +39,9 @@ class Modal extends Component {
                   
                 </p>
                 <div className="Slideshow-view">
-                  <button className="Slideshow-viewdeets">View more details</button>
+                  <Link to='/results'>
+                    <button className="Slideshow-viewdeets">View more details</button>
+                  </Link>
                 </div>
               </div>
               <input style={{ display: 'none'}}/>   
