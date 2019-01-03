@@ -1,16 +1,33 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AuthProvider, { AuthContext } from "./contexts/AuthProvider";
 
-import Map from './components/main/main';
+import Map from "./components/main/main";
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route path="/" component={Map} />
-        </Switch>
-      </Router>
+      <div className="App ">
+        <AuthProvider>
+          <AuthContext.Consumer>
+            {context => (
+              <React.Fragment>
+                {/* <Route
+                  exact
+                  path="/"
+                  render={props => <LoginPage {...props} context={context} />}
+                />
+                <Route
+                  exact
+                  path="/register"
+                  render={props => <Register {...props} context={context} />}
+                /> */}
+                <Route path="/" component={Map} />
+              </React.Fragment>
+            )}
+          </AuthContext.Consumer>
+        </AuthProvider>
+      </div>
     );
   }
 }
