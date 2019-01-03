@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
-//import keys from '../../keys.js';
+import keys from '../../keys.js';
 import Searchbar from './searchbar.js';
 
-const keys = process.env.REACT_APP_GOOGLE_KEY;
+//const keys = process.env.REACT_APP_GOOGLE_KEY;
 const style = {
   width: '90%',
   height: '100%',
