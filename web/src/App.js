@@ -7,7 +7,7 @@ import Map from "./components/main/main";
 class App extends Component {
   render() {
     return (
-      <div className="App container">
+      <div className="App ">
         <AuthProvider>
           <AuthContext.Consumer>
             {context => (
