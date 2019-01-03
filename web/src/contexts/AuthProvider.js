@@ -12,19 +12,44 @@ export class AuthProvider extends Component {
       firstname: "",
       lastname: ""
     },
-    currentFlatSearch: null,
-    locationFeatures: {
-      showGroceryStores: false,
-      showGyms: false,
-      showPublicTransitPickups: false
-    },
+    location: "",
+    //searchFeature: setSearchFeature(), 
+    // locationFeatures: {
+    //   showGroceryStores: false,
+    //   showGyms: false,
+    //   showPublicTransitPickups: false
+    // },
     flatSearchData: {
-      searchTitle: ""
-      // city: setCity(),
-      // pinDropLocation: dropPin(),
-      // pinProximity: setPinProximity(),
-    }
+      // maxPrice: setMaxPrice(), 
+      // numBedrooms: setNumBedrooms(), 
+      isFurnished: false
+    },
+    savedFlats: []
   };
+
+  setLocation = ()=> {
+    console.log(navigator.gelocation)
+  //look at example in the docs and then
+    this.setState(); //response from geolocation 
+  }
+//probably don't need id here 
+  // setLocationFeatures = (index, name, id) => {
+  //   console.log("setLocationFeatures:", index, name, id);
+  //   const tempState = this.state;
+  //   if (name === "groceryStores" || name === "gyms" || name === "publicTransportation") {
+  //     tempState.locations[index].links[name] = !tempState.locations[index].links[
+  //       name
+  //     ];
+  //   } else {
+  //     tempState.locations[index].section[name].forEach(field => {
+  //       if (field._id === id) {
+  //         field.value = !field.value;
+  //       }
+  //     });
+  //   }
+  //   this.setState(tempState);
+  // };
+
   render() {
     const flatSearchData = this.state;
     console.log("USERINFO on authprovider:", flatSearchData);
