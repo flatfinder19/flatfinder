@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { Col, Fa, FormInline } from "mdbreact";
+import { ToastContainer, toast } from 'react-toastify';
 
 class Searchbar extends React.Component {
   state = {
@@ -10,6 +11,8 @@ class Searchbar extends React.Component {
     console.log(value);
   }
 
+  notify = () => toast.error("Successfully saved your results");
+
   render() {
     return (
       <div className="Search">
@@ -17,9 +20,10 @@ class Searchbar extends React.Component {
           <Fa icon="search" />
           <p style={{ marginLeft: '1rem', fontSize: '20px'}}>Search box</p>
         </div>
-          <Link to='/results'>
-            <p className="Search-results">Save search results</p>
-          </Link>
+        {/* <Link to='/results'> */}
+          <p onClick={this.notify} className="Search-results">Save search results</p>
+        {/* </Link> */}
+          <ToastContainer />
       </div>
     );
   }
