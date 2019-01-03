@@ -4,6 +4,7 @@ import AuthProvider, { AuthContext } from "./contexts/AuthProvider";
 
 import Map from "./components/main/main";
 import Login from "./components/auth/login";
+import Signup from "./components/auth/signup";
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
                   render={props => <Register {...props} context={context} />}
                 /> */}
                 <Route path="/login" component={Login} />
+                <Route path="/signup" component={Signup} />
                 <Route exact path="/" component={Map} />
               </React.Fragment>
             )}
