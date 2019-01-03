@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
-import onClickOutside from 'react-onclickoutside';
 import keys from '../../keys.js';
 
 import Searchbar from './searchbar.js';
-import Modal from './Modal.js';
+import Modal from './modal.js';
 
 const style = {
-  // width: '100%',
   height: '90vh',
-  // overflow:'hidden',
-  loadLocation: false
 };
 
 class MapContainer extends Component {
-  state = {  }
+  state = { 
+    showModal: false,
+   }
 
-  onMarkerClick = () => {
-    this.setState({loadLocation: true})
-  };
+  showModal = () => {
+    this.setState({ 
+      showModal: !this.state.showModal, 
+    })
+  }
 
   render() {
-    const { loadLocation } = this.state; 
+    const { showModal } = this.state; 
     return ( 
       <div className="Map">
         <Searchbar />
@@ -37,7 +37,7 @@ class MapContainer extends Component {
                }
              }
           >
-            <Marker onClick={this.onMarkerClick} name={'Current location'} />
+            <Marker onClick={this.showModal} name={'Current location'} />
 
             {/* <InfoWindow onClose={this.onInfoWindowClose}>
               <div>
@@ -46,8 +46,8 @@ class MapContainer extends Component {
             </InfoWindow> */}
           </Map>
         </div>
-        {loadLocation ?
-          <Modal />
+        {showModal ?
+          <Modal showModal={this.showModal}/>
         : null}
       </div>
      );
