@@ -38,9 +38,7 @@ class Modal extends Component {
                   
                 </p>
                 <div className="Slideshow-view">
-                  <a href="https://www.givememymoney.app/" target="_blank" rel="noopener noreferrer">
-                    <button className="Slideshow-viewdeets">View more details</button>
-                  </a>
+                  <button className="Slideshow-viewdeets">View more details</button>
                 </div>
               </div>
               <input style={{ display: 'none'}}/>   
