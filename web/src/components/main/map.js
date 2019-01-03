@@ -5,10 +5,11 @@ import keys from '../../keys.js';
 import Searchbar from './searchbar.js';
 
 const style = {
-  width: '90%',
-  height: '100%',
+  // width: '100%',
+  height: '90vh',
+  // overflow:'hidden',
   loadLocation: false
-}
+};
 
 class MapContainer extends Component {
   state = {  }
@@ -21,7 +22,7 @@ class MapContainer extends Component {
     return ( 
       <div className="Map">
         <Searchbar />
-        <div>
+        <div className='Map-googlemap'> 
           <Map 
             google={this.props.google} 
             style = {style}
@@ -35,13 +36,14 @@ class MapContainer extends Component {
           >
             <Marker onClick={this.onMarkerClick} name={'Current location'} />
 
-            <InfoWindow onClose={this.onInfoWindowClose}>
+            {/* <InfoWindow onClose={this.onInfoWindowClose}>
               <div>
                 <h1>'New York'</h1>
               </div>
-            </InfoWindow>
+            </InfoWindow> */}
           </Map>
         </div>
+        
         {/* <div style={{position: 'relative'}}>
           <div className = "loadDetail">
             <p> Details </p> 
@@ -53,6 +55,5 @@ class MapContainer extends Component {
 }
  
 export default GoogleApiWrapper({
-  apiKey: keys.googleKey
-})(MapContainer
-)
+  apiKey: keys.googleKey,
+})(MapContainer);

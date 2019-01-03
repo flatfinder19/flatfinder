@@ -25,7 +25,7 @@ class SignIn extends Component {
   };
   render() {
     return (
-      <div className=".App-sign">
+      <div className="App-sign">
         <div className="signin">
           <div className="signin--box">
             <h1 className="signin-flatfinder">Flatfinder</h1>

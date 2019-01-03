@@ -1,8 +1,9 @@
-.App {
-  text-align: center; }
-
-.test {
-  color: pink; }
+.Main {
+  display: flex;
+  width: 100%; }
+  .Main div:nth-child(2) {
+    width: 100%;
+    margin-right: 1%; }
 
 .Sidebar {
   font-size: 30px;
@@ -11,7 +12,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 110rem;
+  height: 100vh;
   background-color: #303030;
   min-width: 19rem; }
   .Sidebar-title {
@@ -35,26 +36,26 @@
   background: 'EA4336'; }
 
 .Map {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
-  margin-top: 5%; }
-
-.loadDetail {
-  position: absolute;
   width: 100%;
-  height: 20rem;
-  background-color: lightBlue; }
+  margin-left: 1rem;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+  .Map-googlemap {
+    position: relative;
+    height: 90vh;
+    width: 100%; }
 
 .Search {
   display: flex;
-  align-items: center;
-  justify-content: space-around; }
+  align-items: flex-start; }
   .Search-searchbox {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 60rem;
+    width: 60%;
     border-bottom: solid rgba(128, 128, 128, 0.81) 0.3px;
     line-height: 0;
     margin-bottom: 2rem; }
@@ -123,7 +124,7 @@
     margin-bottom: 2rem; }
   .signin--signin {
     font-size: 1.2rem;
-    color: #EA4336; }
+    color: grey; }
     .signin--signin__username {
       padding: .5rem;
       height: 2rem;

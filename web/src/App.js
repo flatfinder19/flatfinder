@@ -8,7 +8,7 @@ import Login from "./components/auth/login";
 class App extends Component {
   render() {
     return (
-      <div className="App ">
+      <div className="App">
         <AuthProvider>
           <AuthContext.Consumer>
             {context => (
