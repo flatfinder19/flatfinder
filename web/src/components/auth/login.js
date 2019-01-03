@@ -29,7 +29,7 @@ class SignIn extends Component {
       <div className=".App-sign">
         <div className="signin">
           <div className="signin--box">
-            <h1 className="signin-notey">Flatfinder</h1>
+            <h1 className="signin-flatfinder">Flatfinder</h1>
             <h1 className="signin--header">Sign In</h1>
             <div className="signin--buttons">
               <button className="signin--buttons__facebook">

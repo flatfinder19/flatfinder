@@ -10,11 +10,11 @@
   // border: solid white;
   // border: 1px solid white;
 
-  &--image {
-    max-width: 80rem;
-    max-height: 100%;
-    clip: rect(0px, 60px, 500px, 0px);
-  }
+  // &--image {
+  //   max-width: 80rem;
+  //   max-height: 100%;
+  //   clip: rect(0px, 60px, 500px, 0px);
+  // }
 
   &--box {
     background-color: #ffffff;
@@ -24,6 +24,7 @@
     align-items: center;
     width: 40rem;
     height: 60rem;
+    border-radius: 2%;
     box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.294);
     position: relative;
 
@@ -125,7 +126,7 @@
   margin-right: .5rem;
 }
 
-.signin-notey {
+.signin-flatfinder {
   margin-left: 0.9rem;
   margin-top: -3.3rem;
   margin-bottom: 4rem;
