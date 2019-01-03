@@ -13,7 +13,7 @@
   text-align: center;
   height: 110rem;
   background-color: #2f4550;
-  width: 15rem; }
+  min-width: 15rem; }
 
 .Map {
   display: flex;
@@ -21,13 +21,20 @@
   margin-left: 1rem;
   margin-top: 5%; }
 
+.loadDetail {
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  background-color: lightBlue; }
+
 .searchbox {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 60rem;
-  border-bottom: solid grey 0.3px;
-  line-height: 0; }
+  border-bottom: solid rgba(128, 128, 128, 0.81) 0.3px;
+  line-height: 0;
+  margin-bottom: 2rem; }
 
 body {
   margin: 0;
