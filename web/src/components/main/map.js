@@ -2,55 +2,57 @@ import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import keys from '../../keys.js';
 import Searchbar from './searchbar.js';
+import Modal from './modal.js';
 
 //const keys = { googleKey: process.env.REACT_APP_GOOGLE_KEY };
 console.log(keys);
 const style = {
-  width: '90%',
-  height: '100%',
-  loadLocation: false
+  height: '90vh',
 };
 
 class MapContainer extends Component {
-  state = {};
+  state = { 
+    showModal: false,
+   }
 
-  onMarkerClick = () => {
-    this.setState({ loadLocation: true });
-  };
+  showModal = () => {
+    this.setState({ 
+      showModal: !this.state.showModal, 
+    })
+  }
 
   render() {
-    return (
+    const { showModal } = this.state; 
+    return ( 
       <div className="Map">
         <Searchbar />
-        <div>
-          <Map
-            google={this.props.google}
-            style={style}
+        <div className='Map-googlemap'> 
+          <Map 
+            google={this.props.google} 
+            style = {style}
             zoom={9}
             initialCenter={{
               lat: 40.854885,
               lng: -88.081807
             }}
           >
-            <Marker onClick={this.onMarkerClick} name={'Current location'} />
+            <Marker onClick={this.showModal} name={'Current location'} />
 
-            <InfoWindow onClose={this.onInfoWindowClose}>
+            {/* <InfoWindow onClose={this.onInfoWindowClose}>
               <div>
                 <h1>'New York'</h1>
               </div>
-            </InfoWindow>
+            </InfoWindow> */}
           </Map>
         </div>
-        {/* <div style={{position: 'relative'}}>
-          <div className = "loadDetail">
-            <p> Details </p> 
-          </div>
-        </div> */}
+        {showModal ?
+          <Modal showModal={this.showModal}/>
+        : null}
       </div>
     );
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey: keys.googleKey
+  apiKey: keys.googleKey,
 })(MapContainer);

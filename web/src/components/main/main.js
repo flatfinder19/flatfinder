@@ -7,7 +7,7 @@ export default class Main extends Component {
   state = {  }
   render() { 
     return ( 
-      <div style={{display: 'flex'}}>
+      <div className='Main'>
         <Sidebar />
         <Map />
       </div>
