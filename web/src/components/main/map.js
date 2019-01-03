@@ -4,14 +4,35 @@ import keys from '../../keys.js';
 
 import Searchbar from './searchbar.js';
 
+const style = {
+  width: '90%',
+  height: '100%',
+  loadLocation: false
+}
+
 class MapContainer extends Component {
   state = {  }
+
+  onMarkerClick = () => {
+    this.setState({loadLocation: true})
+  };
+
   render() { 
     return ( 
       <div className="Map">
         <Searchbar />
         <div>
-          <Map google={this.props.google} zoom={14}>
+          <Map 
+            google={this.props.google} 
+            style = {style}
+            zoom={9}
+             initialCenter = {
+               {
+                 lat: 40.854885,
+                 lng: -88.081807
+               }
+             }
+          >
             <Marker onClick={this.onMarkerClick} name={'Current location'} />
 
             <InfoWindow onClose={this.onInfoWindowClose}>
@@ -21,6 +42,11 @@ class MapContainer extends Component {
             </InfoWindow>
           </Map>
         </div>
+        {/* <div style={{position: 'relative'}}>
+          <div className = "loadDetail">
+            <p> Details </p> 
+          </div>
+        </div> */}
       </div>
      );
   }
