@@ -33,7 +33,8 @@ class SearchResults(models.Model):
     last_modified = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'<{self.__class__.__name__}: {self.id} {self.short_description}>'
+        # return f'<{self.__class__.__name__}: {self.id} {self.short_description}>'
+        return f'<{self.__class__.__name__}: {self.short_description}>'
 
 
 class PersonalSearchResult(SearchResults):

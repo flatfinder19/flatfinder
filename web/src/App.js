@@ -4,7 +4,6 @@ import AuthProvider, { AuthContext } from './contexts/AuthProvider';
 
 import Map from './components/main/main';
 
-console.log(process.env.REACT_APP_GOOGLE_KEY);
 class App extends Component {
   render() {
     return (
