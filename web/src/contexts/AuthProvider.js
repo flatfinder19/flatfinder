@@ -56,14 +56,13 @@ class Provider extends Component {
     try {
       const response = await axios.post('https://flatfinderapp.herokuapp.com/auth/user/', user);
       const token = await response.data;
-      console.log(token);
-      // if (token) {
-      //   localStorage.setItem('token', JSON.stringify(token));
-      //   this.setState({ requestError: false })
-      //   this.props.history.push('/')
-      // } else {
-      //   this.setState({ requestError: true })
-      // }
+      if (token) {
+        localStorage.setItem('token', JSON.stringify(token));
+        this.setState({ requestError: false })
+        this.props.history.push('/')
+      } else {
+        this.setState({ requestError: true })
+      }
     } catch(e){
       this.setState({ requestError: true })
     }
