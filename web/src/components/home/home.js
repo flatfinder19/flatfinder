@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import landing from './landing.jpg';
+
 class Home extends Component {
   state = {  }
   render() { 
@@ -14,6 +16,9 @@ class Home extends Component {
               <Link to='/signup'><p>Register</p></Link>
             </div>
           </div>
+        </div>
+        <div>
+           <img src={landing} alt="SideLogo" className="Home-pic"/>
         </div>
       </div>
      );
