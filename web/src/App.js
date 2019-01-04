@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Consumer, AuthProvider } from "./contexts/AuthProvider";
 import { Redirect } from 'react-router-dom';
 
+
 import Map from "./components/main/main";
 import Results from "./components/results/results";
 import Login from "./components/auth/login";
