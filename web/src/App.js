@@ -47,7 +47,7 @@ class App extends Component {
                 /> */}
                 <Route path="/login" component={(Login)} />
                 <Route path="/home" component={(Home)} />
-                <Route path="/signup" component={RequireAuth(Signup)} />
+                <Route path="/signup" component={(Signup)} />
                 <PrivateRoute path="/results" component={Results} />
                 <PrivateRoute exact path="/" component={Map} />
               </React.Fragment>

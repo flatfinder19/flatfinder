@@ -54,15 +54,16 @@ class Provider extends Component {
     e.preventDefault();
     const user = {username: this.state.username, password: this.state.password}
     try {
-      const response = await axios.post('https://flatfinderapp.herokuapp.com/api-token-auth/', user);
-      const token = await response.data.token;
-      if (token) {
-        localStorage.setItem('token', JSON.stringify(token));
-        this.setState({ requestError: false })
-        this.props.history.push('/')
-      } else {
-        this.setState({ requestError: true })
-      }
+      const response = await axios.post('https://flatfinderapp.herokuapp.com/auth/user/', user);
+      const token = await response.data;
+      console.log(token);
+      // if (token) {
+      //   localStorage.setItem('token', JSON.stringify(token));
+      //   this.setState({ requestError: false })
+      //   this.props.history.push('/')
+      // } else {
+      //   this.setState({ requestError: true })
+      // }
     } catch(e){
       this.setState({ requestError: true })
     }
@@ -102,6 +103,7 @@ class Provider extends Component {
           globalData : this.state,
           loginUser: this.loginUser,
           logoutUser: this.logoutUser,
+          signupUser: this.signupUser,
           handleInput: this.handleInputChange
         }}
       >
