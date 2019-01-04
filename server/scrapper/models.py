@@ -7,7 +7,7 @@ from uuid import uuid4
 
 class CityName(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    code = models.CharField(max_length=10, blank=False)
+    code = models.CharField(max_length=60, blank=False)
     name = models.CharField(max_length=60, blank=False)
     country = models.CharField(max_length=60, default="United States")
     latitude = models.CharField(max_length=60, blank=False)
