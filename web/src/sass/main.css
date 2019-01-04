@@ -5,9 +5,14 @@
     width: 99%; }
 
 .Home-pic {
-  width: 100%; }
+  width: 100%;
+  clip: rect(100px, 600px, 200px, 100px); }
 
 .Home-description {
+  height: 40rem;
+  background-color: white; }
+
+.Home-testimonials {
   height: 40rem;
   background-color: #F5F5F5; }
 

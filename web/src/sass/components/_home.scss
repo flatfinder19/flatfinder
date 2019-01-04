@@ -2,9 +2,14 @@
 
   &-pic {
     width: 100%;
+    clip: rect(100px, 600px, 200px, 100px);
   }
 
   &-description {
+    height: 40rem;
+    background-color: rgb(255, 255, 255);
+  }
+  &-testimonials {
     height: 40rem;
     background-color: #F5F5F5;
   }

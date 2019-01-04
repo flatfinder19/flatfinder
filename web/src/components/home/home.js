@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import landing from './landing.jpg';
+import landing from './landing.jpeg';
 
 class Home extends Component {
   state = {  }
@@ -17,10 +17,12 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div>
-           <img src={landing} alt="SideLogo" className="Home-pic"/>
-        </div>
+        {/* <div> */}
+          <img src={landing} alt="SideLogo" className="Home-pic"/>
+        {/* </div> */}
         <div className="Home-description">
+        </div>
+        <div className="Home-testimonials">
         </div>
       </div>
      );

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Consumer, AuthProvider } from "./contexts/AuthProvider";
@@ -9,14 +8,6 @@ import Results from "./components/results/results";
 import Login from "./components/auth/login";
 import Signup from "./components/auth/signup";
 import Home from "./components/home/home";
-=======
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import AuthProvider, { AuthContext } from './contexts/AuthProvider';
-
-import Map from './components/main/main';
-import Login from './components/auth/login';
->>>>>>> development
 
 class App extends Component {
   render() {
