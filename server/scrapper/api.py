@@ -79,3 +79,32 @@ class UserSubAreaNameViewSet(viewsets.ModelViewSet):
 
         else:
             return UserSubAreaName.objects.filter(user=user)
+
+
+class CityNameSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = CityName
+        fields = ("code", "name", "latitude", "longitude", "country")
+
+    '''
+    def create(self, validated_data):
+        user = self.context["request"].user
+        subarea_name = CityName.objects.create(
+            user=user, **validated_data)
+        return subarea_name
+    '''
+
+
+class CityNameViewSet(viewsets.ModelViewSet):
+    serializer_class = CityNameSerializer
+    queryset = CityName.objects.all()
+    '''
+    def get_queryset(self):
+        user = self.request.user
+
+        if user.is_anonymous:
+            return CityName.objects.none()
+
+        else:
+            return CityName.objects.filter(user=user)
+'''

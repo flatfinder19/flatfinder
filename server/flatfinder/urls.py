@@ -21,9 +21,10 @@ from rest_framework.authtoken import views
 from scrapper.api import *
 
 router = routers.DefaultRouter()
-router.register(r'cities', UserCityNameViewSet)
-router.register(r'subareas', UserSubAreaNameViewSet)
-router.register(r'searches', PersonalSearchResultViewSet)
+router.register(r'cities', CityNameViewSet)
+router.register(r'usercities', UserCityNameViewSet)
+router.register(r'usersubareas', UserSubAreaNameViewSet)
+router.register(r'personalsearches', PersonalSearchResultViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
