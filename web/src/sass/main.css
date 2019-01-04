@@ -21,10 +21,24 @@
 
 .Home-description {
   height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white; }
+  .Home-description-title {
+    font-size: 3rem;
+    color: grey; }
+  .Home-description-details {
+    width: 50%;
+    font-size: 1.6rem; }
 
 .Home-testimonials {
   height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #F5F5F5; }
 
 .Results {

@@ -23,10 +23,27 @@
 
   &-description {
     height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
+    &-title {
+      font-size: 3rem;
+      color: grey;
+    }
+    &-details {
+      width: 50%;
+      font-size: 1.6rem;
+      // background-color: yellow;
+    }
   }
   &-testimonials {
     height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #F5F5F5;
   }
 }
