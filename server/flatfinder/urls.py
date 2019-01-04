@@ -37,7 +37,7 @@ urlpatterns = [
     #re_path(r'^api-token-auth/', views.obtain_auth_token)
     re_path(r'^api-token-auth/', obtain_jwt_token),
     re_path(r'^api-token-verify/', verify_jwt_token),
-    path('user_admin/', include('scrapper.urls')),
+    path('auth/', include('scrapper.urls')),
     url('^api/passwordchange/', UpdatePassword.as_view()),
     re_path(r'^api-token-refresh/', refresh_jwt_token),
 ]
