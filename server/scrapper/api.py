@@ -136,7 +136,8 @@ class UserSubAreaNameViewSet(viewsets.ModelViewSet):
 class CityNameSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = CityName
-        fields = ("code", "name", "latitude", "longitude", "country")
+        fields = ("code", "name", "latitude", "area_key",
+                  "area_name", "longitude", "country")
 
 
 class CityNameViewSet(viewsets.ModelViewSet):
