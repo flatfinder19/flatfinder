@@ -1,0 +1,729 @@
+[{
+  "name": "atlanta",
+  "state": " GA",
+  "site": "atlanta",
+  "area_key": "atl",
+  "area_name": "atlanta",
+  "latitude": 33.748901,
+  "longitude": -84.3881
+}, {
+  "name": "atlanta",
+  "state": " GA",
+  "site": "atlanta",
+  "area_key": "nat",
+  "area_name": "otp north",
+  "latitude": 33.748901,
+  "longitude": -84.3881
+}, {
+  "name": "atlanta",
+  "state": " GA",
+  "site": "atlanta",
+  "area_key": "eat",
+  "area_name": "otp east",
+  "latitude": 33.748901,
+  "longitude": -84.3881
+}, {
+  "name": "atlanta",
+  "state": " GA",
+  "site": "atlanta",
+  "area_key": "sat",
+  "area_name": "otp south",
+  "latitude": 33.748901,
+  "longitude": -84.3881
+}, {
+  "name": "atlanta",
+  "state": " GA",
+  "site": "atlanta",
+  "area_key": "wat",
+  "area_name": "otp west",
+  "latitude": 33.748901,
+  "longitude": -84.3881
+}, {
+  "name": "boston",
+  "state": "",
+  "site": "boston",
+  "area_key": "gbs",
+  "area_name": "boston\\/camb\\/brook",
+  "latitude": 42.358299,
+  "longitude": -71.060303
+}, {
+  "name": "boston",
+  "state": "",
+  "site": "boston",
+  "area_key": "nwb",
+  "area_name": "northwest\\/merrimack",
+  "latitude": 42.358299,
+  "longitude": -71.060303
+}, {
+  "name": "boston",
+  "state": "",
+  "site": "boston",
+  "area_key": "bmw",
+  "area_name": "metro west",
+  "latitude": 42.358299,
+  "longitude": -71.060303
+}, {
+  "name": "boston",
+  "state": "",
+  "site": "boston",
+  "area_key": "nos",
+  "area_name": "north shore",
+  "latitude": 42.358299,
+  "longitude": -71.060303
+}, {
+  "name": "boston",
+  "state": "",
+  "site": "boston",
+  "area_key": "sob",
+  "area_name": "south shore",
+  "latitude": 42.358299,
+  "longitude": -71.060303
+}, {
+  "name": "chicago",
+  "state": "",
+  "site": "chicago",
+  "area_key": "chc",
+  "area_name": "city of chicago",
+  "latitude": 41.849998,
+  "longitude": -87.650002
+}, {
+  "name": "chicago",
+  "state": "",
+  "site": "chicago",
+  "area_key": "nch",
+  "area_name": "north chicagoland",
+  "latitude": 41.849998,
+  "longitude": -87.650002
+}, {
+  "name": "chicago",
+  "state": "",
+  "site": "chicago",
+  "area_key": "wcl",
+  "area_name": "west chicagoland",
+  "latitude": 41.849998,
+  "longitude": -87.650002
+}, {
+  "name": "chicago",
+  "state": "",
+  "site": "chicago",
+  "area_key": "sox",
+  "area_name": "south chicagoland",
+  "latitude": 41.849998,
+  "longitude": -87.650002
+}, {
+  "name": "chicago",
+  "state": "",
+  "site": "chicago",
+  "area_key": "nwi",
+  "area_name": "northwest indiana",
+  "latitude": 41.849998,
+  "longitude": -87.650002
+}, {
+  "name": "chicago",
+  "state": "",
+  "site": "chicago",
+  "area_key": "nwc",
+  "area_name": "northwest suburbs",
+  "latitude": 41.849998,
+  "longitude": -87.650002
+}, {
+  "name": "dallas  fort worth",
+  "state": "",
+  "site": "dallas",
+  "area_key": "dal",
+  "area_name": "dallas",
+  "latitude": 32.783298,
+  "longitude": -96.800003
+}, {
+  "name": "dallas  fort worth",
+  "state": "",
+  "site": "dallas",
+  "area_key": "ftw",
+  "area_name": "fort worth",
+  "latitude": 32.783298,
+  "longitude": -96.800003
+}, {
+  "name": "dallas  fort worth",
+  "state": "",
+  "site": "dallas",
+  "area_key": "mdf",
+  "area_name": "mid cities",
+  "latitude": 32.783298,
+  "longitude": -96.800003
+}, {
+  "name": "dallas  fort worth",
+  "state": "",
+  "site": "dallas",
+  "area_key": "ndf",
+  "area_name": "north DFW",
+  "latitude": 32.783298,
+  "longitude": -96.800003
+}, {
+  "name": "dallas  fort worth",
+  "state": "",
+  "site": "dallas",
+  "area_key": "sdf",
+  "area_name": "south DFW",
+  "latitude": 32.783298,
+  "longitude": -96.800003
+}, {
+  "name": "detroit metro",
+  "state": "",
+  "site": "detroit",
+  "area_key": "mcb",
+  "area_name": "macomb co",
+  "latitude": 42.331402,
+  "longitude": -83.045799
+}, {
+  "name": "detroit metro",
+  "state": "",
+  "site": "detroit",
+  "area_key": "wyn",
+  "area_name": "wayne co",
+  "latitude": 42.331402,
+  "longitude": -83.045799
+}, {
+  "name": "detroit metro",
+  "state": "",
+  "site": "detroit",
+  "area_key": "okl",
+  "area_name": "oakland co",
+  "latitude": 42.331402,
+  "longitude": -83.045799
+}, {
+  "name": "ft myers  SW florida",
+  "state": "",
+  "site": "fortmyers",
+  "area_key": "lee",
+  "area_name": "lee county",
+  "latitude": 26.629999,
+  "longitude": -81.849998
+}, {
+  "name": "ft myers  SW florida",
+  "state": "",
+  "site": "fortmyers",
+  "area_key": "chl",
+  "area_name": "charlotte co",
+  "latitude": 26.629999,
+  "longitude": -81.849998
+}, {
+  "name": "ft myers  SW florida",
+  "state": "",
+  "site": "fortmyers",
+  "area_key": "col",
+  "area_name": "collier co",
+  "latitude": 26.629999,
+  "longitude": -81.849998
+}, {
+  "name": "hawaii",
+  "state": "",
+  "site": "honolulu",
+  "area_key": "oah",
+  "area_name": "oahu",
+  "latitude": 21.311399,
+  "longitude": -157.796005
+}, {
+  "name": "hawaii",
+  "state": "",
+  "site": "honolulu",
+  "area_key": "big",
+  "area_name": "big island",
+  "latitude": 21.311399,
+  "longitude": -157.796005
+}, {
+  "name": "hawaii",
+  "state": "",
+  "site": "honolulu",
+  "area_key": "mau",
+  "area_name": "maui",
+  "latitude": 21.311399,
+  "longitude": -157.796005
+}, {
+  "name": "hawaii",
+  "state": "",
+  "site": "honolulu",
+  "area_key": "kau",
+  "area_name": "kauai",
+  "latitude": 21.311399,
+  "longitude": -157.796005
+}, {
+  "name": "hawaii",
+  "state": "",
+  "site": "honolulu",
+  "area_key": "mol",
+  "area_name": "molokai",
+  "latitude": 21.311399,
+  "longitude": -157.796005
+}, {
+  "name": "los angeles",
+  "state": "",
+  "site": "losangeles",
+  "area_key": "wst",
+  "area_name": "westside-southbay",
+  "latitude": 34.0522,
+  "longitude": -118.242996
+}, {
+  "name": "los angeles",
+  "state": "",
+  "site": "losangeles",
+  "area_key": "sfv",
+  "area_name": "SF valley",
+  "latitude": 34.0522,
+  "longitude": -118.242996
+}, {
+  "name": "los angeles",
+  "state": "",
+  "site": "losangeles",
+  "area_key": "lac",
+  "area_name": "central LA",
+  "latitude": 34.0522,
+  "longitude": -118.242996
+}, {
+  "name": "los angeles",
+  "state": "",
+  "site": "losangeles",
+  "area_key": "sgv",
+  "area_name": "san gabriel valley",
+  "latitude": 34.0522,
+  "longitude": -118.242996
+}, {
+  "name": "los angeles",
+  "state": "",
+  "site": "losangeles",
+  "area_key": "lgb",
+  "area_name": "long beach \\/ 562",
+  "latitude": 34.0522,
+  "longitude": -118.242996
+}, {
+  "name": "los angeles",
+  "state": "",
+  "site": "losangeles",
+  "area_key": "ant",
+  "area_name": "antelope valley",
+  "latitude": 34.0522,
+  "longitude": -118.242996
+}, {
+  "name": "minneapolis  st paul",
+  "state": "",
+  "site": "minneapolis",
+  "area_key": "hnp",
+  "area_name": "hennepin co",
+  "latitude": 44.98,
+  "longitude": -93.263603
+}, {
+  "name": "minneapolis  st paul",
+  "state": "",
+  "site": "minneapolis",
+  "area_key": "ram",
+  "area_name": "ramsey co",
+  "latitude": 44.98,
+  "longitude": -93.263603
+}, {
+  "name": "minneapolis  st paul",
+  "state": "",
+  "site": "minneapolis",
+  "area_key": "ank",
+  "area_name": "anok\\/chis\\/isa",
+  "latitude": 44.98,
+  "longitude": -93.263603
+}, {
+  "name": "minneapolis  st paul",
+  "state": "",
+  "site": "minneapolis",
+  "area_key": "wsh",
+  "area_name": "washington\\/WI",
+  "latitude": 44.98,
+  "longitude": -93.263603
+}, {
+  "name": "minneapolis  st paul",
+  "state": "",
+  "site": "minneapolis",
+  "area_key": "dak",
+  "area_name": "dakota\\/scott",
+  "latitude": 44.98,
+  "longitude": -93.263603
+}, {
+  "name": "minneapolis  st paul",
+  "state": "",
+  "site": "minneapolis",
+  "area_key": "csw",
+  "area_name": "carv\\/sher\\/wri",
+  "latitude": 44.98,
+  "longitude": -93.263603
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "mnh",
+  "area_name": "manhattan",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "brk",
+  "area_name": "brooklyn",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "que",
+  "area_name": "queens",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "brx",
+  "area_name": "bronx",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "stn",
+  "area_name": "staten island",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "jsy",
+  "area_name": "new jersey",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "lgi",
+  "area_name": "long island",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "wch",
+  "area_name": "westchester",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "new york city",
+  "state": "",
+  "site": "newyork",
+  "area_key": "fct",
+  "area_name": "fairfield",
+  "latitude": 40.714199,
+  "longitude": -74.006401
+}, {
+  "name": "phoenix",
+  "state": " AZ",
+  "site": "phoenix",
+  "area_key": "cph",
+  "area_name": "central\\/south phx",
+  "latitude": 33.448299,
+  "longitude": -112.072998
+}, {
+  "name": "phoenix",
+  "state": " AZ",
+  "site": "phoenix",
+  "area_key": "evl",
+  "area_name": "east valley",
+  "latitude": 33.448299,
+  "longitude": -112.072998
+}, {
+  "name": "phoenix",
+  "state": " AZ",
+  "site": "phoenix",
+  "area_key": "nph",
+  "area_name": "phx north",
+  "latitude": 33.448299,
+  "longitude": -112.072998
+}, {
+  "name": "phoenix",
+  "state": " AZ",
+  "site": "phoenix",
+  "area_key": "wvl",
+  "area_name": "west valley",
+  "latitude": 33.448299,
+  "longitude": -112.072998
+}, {
+  "name": "portland",
+  "state": " OR",
+  "site": "portland",
+  "area_key": "mlt",
+  "area_name": "multnomah co",
+  "latitude": 45.523602,
+  "longitude": -122.675003
+}, {
+  "name": "portland",
+  "state": " OR",
+  "site": "portland",
+  "area_key": "wsc",
+  "area_name": "washington co",
+  "latitude": 45.523602,
+  "longitude": -122.675003
+}, {
+  "name": "portland",
+  "state": " OR",
+  "site": "portland",
+  "area_key": "clk",
+  "area_name": "clark\\/cowlitz",
+  "latitude": 45.523602,
+  "longitude": -122.675003
+}, {
+  "name": "portland",
+  "state": " OR",
+  "site": "portland",
+  "area_key": "clc",
+  "area_name": "clackamas co",
+  "latitude": 45.523602,
+  "longitude": -122.675003
+}, {
+  "name": "portland",
+  "state": " OR",
+  "site": "portland",
+  "area_key": "nco",
+  "area_name": "north coast",
+  "latitude": 45.523602,
+  "longitude": -122.675003
+}, {
+  "name": "portland",
+  "state": " OR",
+  "site": "portland",
+  "area_key": "yam",
+  "area_name": "yamhill co",
+  "latitude": 45.523602,
+  "longitude": -122.675003
+}, {
+  "name": "portland",
+  "state": " OR",
+  "site": "portland",
+  "area_key": "grg",
+  "area_name": "columbia gorge",
+  "latitude": 45.523602,
+  "longitude": -122.675003
+}, {
+  "name": "san diego",
+  "state": "",
+  "site": "sandiego",
+  "area_key": "csd",
+  "area_name": "city of san diego",
+  "latitude": 32.715302,
+  "longitude": -117.155998
+}, {
+  "name": "san diego",
+  "state": "",
+  "site": "sandiego",
+  "area_key": "nsd",
+  "area_name": "north SD county",
+  "latitude": 32.715302,
+  "longitude": -117.155998
+}, {
+  "name": "san diego",
+  "state": "",
+  "site": "sandiego",
+  "area_key": "esd",
+  "area_name": "east SD county",
+  "latitude": 32.715302,
+  "longitude": -117.155998
+}, {
+  "name": "san diego",
+  "state": "",
+  "site": "sandiego",
+  "area_key": "ssd",
+  "area_name": "south SD county",
+  "latitude": 32.715302,
+  "longitude": -117.155998
+}, {
+  "name": "seattle-tacoma",
+  "state": "",
+  "site": "seattle",
+  "area_key": "see",
+  "area_name": "seattle",
+  "latitude": 47.6064,
+  "longitude": -122.331001
+}, {
+  "name": "seattle-tacoma",
+  "state": "",
+  "site": "seattle",
+  "area_key": "est",
+  "area_name": "eastside",
+  "latitude": 47.6064,
+  "longitude": -122.331001
+}, {
+  "name": "seattle-tacoma",
+  "state": "",
+  "site": "seattle",
+  "area_key": "sno",
+  "area_name": "snohomish co",
+  "latitude": 47.6064,
+  "longitude": -122.331001
+}, {
+  "name": "seattle-tacoma",
+  "state": "",
+  "site": "seattle",
+  "area_key": "kit",
+  "area_name": "kitsap co",
+  "latitude": 47.6064,
+  "longitude": -122.331001
+}, {
+  "name": "seattle-tacoma",
+  "state": "",
+  "site": "seattle",
+  "area_key": "tac",
+  "area_name": "tacoma",
+  "latitude": 47.6064,
+  "longitude": -122.331001
+}, {
+  "name": "seattle-tacoma",
+  "state": "",
+  "site": "seattle",
+  "area_key": "oly",
+  "area_name": "olympia",
+  "latitude": 47.6064,
+  "longitude": -122.331001
+}, {
+  "name": "seattle-tacoma",
+  "state": "",
+  "site": "seattle",
+  "area_key": "skc",
+  "area_name": "south king",
+  "latitude": 47.6064,
+  "longitude": -122.331001
+}, {
+  "name": "SF bay area",
+  "state": "",
+  "site": "sfbay",
+  "area_key": "sfc",
+  "area_name": "san francisco",
+  "latitude": 37.5,
+  "longitude": -122.25
+}, {
+  "name": "SF bay area",
+  "state": "",
+  "site": "sfbay",
+  "area_key": "sby",
+  "area_name": "south bay",
+  "latitude": 37.5,
+  "longitude": -122.25
+}, {
+  "name": "SF bay area",
+  "state": "",
+  "site": "sfbay",
+  "area_key": "eby",
+  "area_name": "east bay",
+  "latitude": 37.5,
+  "longitude": -122.25
+}, {
+  "name": "SF bay area",
+  "state": "",
+  "site": "sfbay",
+  "area_key": "pen",
+  "area_name": "peninsula",
+  "latitude": 37.5,
+  "longitude": -122.25
+}, {
+  "name": "SF bay area",
+  "state": "",
+  "site": "sfbay",
+  "area_key": "nby",
+  "area_name": "north bay",
+  "latitude": 37.5,
+  "longitude": -122.25
+}, {
+  "name": "SF bay area",
+  "state": "",
+  "site": "sfbay",
+  "area_key": "scz",
+  "area_name": "santa cruz",
+  "latitude": 37.5,
+  "longitude": -122.25
+}, {
+  "name": "south florida",
+  "state": "",
+  "site": "miami",
+  "area_key": "mdc",
+  "area_name": "miami \\/ dade",
+  "latitude": 25.773899,
+  "longitude": -80.193901
+}, {
+  "name": "south florida",
+  "state": "",
+  "site": "miami",
+  "area_key": "brw",
+  "area_name": "broward county",
+  "latitude": 25.773899,
+  "longitude": -80.193901
+}, {
+  "name": "south florida",
+  "state": "",
+  "site": "miami",
+  "area_key": "pbc",
+  "area_name": "palm beach co",
+  "latitude": 25.773899,
+  "longitude": -80.193901
+}, {
+  "name": "tampa bay area",
+  "state": "",
+  "site": "tampa",
+  "area_key": "hdo",
+  "area_name": "hernando co",
+  "latitude": 28.0,
+  "longitude": -82.449997
+}, {
+  "name": "tampa bay area",
+  "state": "",
+  "site": "tampa",
+  "area_key": "hil",
+  "area_name": "hillsborough co",
+  "latitude": 28.0,
+  "longitude": -82.449997
+}, {
+  "name": "tampa bay area",
+  "state": "",
+  "site": "tampa",
+  "area_key": "psc",
+  "area_name": "pasco co",
+  "latitude": 28.0,
+  "longitude": -82.449997
+}, {
+  "name": "tampa bay area",
+  "state": "",
+  "site": "tampa",
+  "area_key": "pnl",
+  "area_name": "pinellas co",
+  "latitude": 28.0,
+  "longitude": -82.449997
+}, {
+  "name": "washington",
+  "state": " DC",
+  "site": "washingtondc",
+  "area_key": "doc",
+  "area_name": "district of columbia",
+  "latitude": 38.889999,
+  "longitude": -77.029999
+}, {
+  "name": "washington",
+  "state": " DC",
+  "site": "washingtondc",
+  "area_key": "nva",
+  "area_name": "northern virginia",
+  "latitude": 38.889999,
+  "longitude": -77.029999
+}, {
+  "name": "washington",
+  "state": " DC",
+  "site": "washingtondc",
+  "area_key": "mld",
+  "area_name": "maryland",
+  "latitude": 38.889999,
+  "longitude": -77.029999
+}]
