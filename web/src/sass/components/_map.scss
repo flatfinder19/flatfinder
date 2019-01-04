@@ -1,13 +1,27 @@
 .Map {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
   margin-left: 1rem;
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  &-googlemap {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+  }
 }
 
-.loadDetail {
-  position: absolute;
-  width: 100%;
-  height: 20rem;
-  background-color: lightBlue;
-}
+// .loadDetail {
+//   position: absolute;
+//   // left: 50%;
+//   width: 100%;
+//   height: 20rem;
+//   background-color: lightBlue;
+
+//   &-box {
+
+//   }
+// }
