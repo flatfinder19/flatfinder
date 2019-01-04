@@ -50,6 +50,24 @@ class Provider extends Component {
     }
   };
 
+  signupUser = async e => {
+    e.preventDefault();
+    const user = {username: this.state.username, password: this.state.password}
+    try {
+      const response = await axios.post('https://flatfinderapp.herokuapp.com/api-token-auth/', user);
+      const token = await response.data.token;
+      if (token) {
+        localStorage.setItem('token', JSON.stringify(token));
+        this.setState({ requestError: false })
+        this.props.history.push('/')
+      } else {
+        this.setState({ requestError: true })
+      }
+    } catch(e){
+      this.setState({ requestError: true })
+    }
+  };
+
   setLocation = ()=> {
     console.log(navigator.gelocation)
   //look at example in the docs and then
