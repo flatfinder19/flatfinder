@@ -68,6 +68,10 @@ class Provider extends Component {
     }
   };
 
+  logoutUser = () => {
+    
+  }
+
   setLocation = ()=> {
     console.log(navigator.gelocation)
   //look at example in the docs and then

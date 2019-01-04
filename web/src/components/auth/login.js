@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { Consumer } from "../../contexts/AuthProvider";
 
@@ -15,7 +15,6 @@ class SignIn extends Component {
   // };
   
   render() {
-    const { username, password} = this.state;
     return (
       <Consumer>
         {context => (

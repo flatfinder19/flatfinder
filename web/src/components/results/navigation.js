@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, NavLink, withRouter } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 class Navigation extends Component {
   state = {}
