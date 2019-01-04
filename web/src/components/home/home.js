@@ -20,6 +20,8 @@ class Home extends Component {
         <div>
            <img src={landing} alt="SideLogo" className="Home-pic"/>
         </div>
+        <div className="Home-description">
+        </div>
       </div>
      );
   }

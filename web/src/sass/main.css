@@ -7,6 +7,10 @@
 .Home-pic {
   width: 100%; }
 
+.Home-description {
+  height: 40rem;
+  background-color: #F5F5F5; }
+
 .Results {
   display: flex;
   width: 100%;

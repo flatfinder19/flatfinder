@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import AuthProvider, { AuthContext } from "./contexts/AuthProvider";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Consumer, AuthProvider } from "./contexts/AuthProvider";
+import { withRouter } from 'react-router-dom';
 
 import Map from "./components/main/main";
 import Results from "./components/results/results";
@@ -13,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <AuthProvider>
-          <AuthContext.Consumer>
+          <Consumer>
             {context => (
               <React.Fragment>
                 {/* <Route
@@ -33,7 +34,7 @@ class App extends Component {
                 <Route exact path="/" component={Map} />
               </React.Fragment>
             )}
-          </AuthContext.Consumer>
+          </Consumer>
         </AuthProvider>
       </div>
     );
