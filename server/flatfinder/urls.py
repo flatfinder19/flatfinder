@@ -18,9 +18,11 @@ from django.urls import path, include, re_path
 from rest_framework import routers
 from rest_framework.authtoken import views
 
-from scrapper.api import PersonalSearchResultViewSet
+from scrapper.api import *
 
 router = routers.DefaultRouter()
+router.register(r'cities', UserCityNameViewSet)
+router.register(r'subareas', UserSubAreaNameViewSet)
 router.register(r'searches', PersonalSearchResultViewSet)
 
 urlpatterns = [
