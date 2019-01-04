@@ -28,7 +28,7 @@ from scrapper.views import UserList, UpdatePassword
 router = routers.DefaultRouter()
 router.register(r'cities', CityNameViewSet)
 router.register(r'usercities', UserCityNameViewSet)
-router.register(r'usersubareas', UserSubAreaNameViewSet)
+router.register(r'personalsearchcreteria', PersonalSearchCreteriaViewSet)
 router.register(r'personalsearches', PersonalSearchResultViewSet)
 
 urlpatterns = [
