@@ -8,10 +8,11 @@ import {
   TouchableOpacity,
   View,
   Dimensions,
-  TextInput
+  TextInput,
+  SafeAreaView
 } from 'react-native';
 import { WebBrowser, MapView } from 'expo';
-import { SearchBar } from 'react-native-elements';
+import { Feather, MaterialIcons } from '@expo/vector-icons';
 
 import { MonoText } from '../components/StyledText';
 
@@ -24,30 +25,67 @@ export default class HomeScreen extends React.Component {
   state = { text: '' };
   render() {
     return (
-      <View style={styles.container}>
-        <View style={{ width: 337, paddingTop: 20 }}>
-          <SearchBar
-            lightTheme
-            round
-            searchIcon={{ size: 24 }}
-            onChangeText={text => this.setState({ text })}
-            onClear={() => this.setState({ text: '' })}
-            placeholder="Search"
-            cancelIcon={{ type: 'font-awesome', name: 'chevron-left' }}
-          />
-        </View>
-        {/* <TextInput
-          style={{
-            marginTop: 20,
-            width: 300,
-            marginHorizontal: 20,
-            height: 40,
-            borderColor: '#fff',
-            borderWidth: 1
-          }}
-          onChangeText={text => this.setState({ text })}
-          value={this.state.text}
-        /> 
+      <SafeAreaView style={{ flex: 1 }}>
+        <View style={styles.container}>
+          <View
+            style={{
+              zIndex: 1000,
+              position: 'absolute',
+              top: 60,
+              width: 337,
+              paddingVertical: 20,
+              borderWidth: 1,
+              backgroundColor: 'rgba(100,100,100, .5)',
+              borderColor: 'rgba(100,100,100, .4)',
+              borderRadius: 10
+            }}
+          >
+            <TextInput
+              style={{
+                marginHorizontal: 10,
+                height: 40,
+                borderColor: '#ddd',
+                borderWidth: 1,
+                borderRadius: 20,
+                backgroundColor: 'rgba(255,255,255, 1)',
+                paddingLeft: 35
+              }}
+              returnKeyType="search"
+              placeholder="Search Here"
+              onChangeText={text => this.setState({ text })}
+              value={this.state.text}
+            />
+            <View style={{ position: 'absolute', left: 15, top: 25 }}>
+              <TouchableOpacity
+                style={{
+                  shadowOffset: { width: 10, height: 10 },
+                  shadowColor: 'transparent',
+                  shadowOpacity: 1.0
+                }}
+              >
+                <Feather name="search" size={30} color="rgba(0,0,0, .5)" />
+              </TouchableOpacity>
+            </View>
+            <View style={{ position: 'absolute', right: 15, top: 25 }}>
+              <TouchableOpacity
+                onPress={() =>
+                  this.setState({
+                    text: ''
+                  })
+                }
+                style={{
+                  shadowOffset: { width: 10, height: 10 },
+                  shadowColor: 'transparent',
+                  shadowOpacity: 1.0
+                }}
+              >
+                <MaterialIcons name="clear" size={30} color="rgba(0,0,0, .5)" />
+              </TouchableOpacity>
+            </View>
+          </View>
+          {/*
+        
+        
          <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <View style={styles.welcomeContainer}>
             <Image
@@ -88,16 +126,17 @@ export default class HomeScreen extends React.Component {
             <MonoText style={styles.codeHighlightText}>navigation/MainTabNavigator.js</MonoText>
           </View> 
         </View>*/}
-        <MapView
-          style={{ flex: 1, width: SCREEN_WIDTH, height: SCREEN_HEIGHT }}
-          initialRegion={{
-            latitude: 37.78825,
-            longitude: -122.4324,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421
-          }}
-        />
-      </View>
+          <MapView
+            style={{ flex: 1, width: SCREEN_WIDTH, height: SCREEN_HEIGHT }}
+            initialRegion={{
+              latitude: 37.78825,
+              longitude: -122.4324,
+              latitudeDelta: 0.0922,
+              longitudeDelta: 0.0421
+            }}
+          />
+        </View>
+      </SafeAreaView>
     );
   }
 
