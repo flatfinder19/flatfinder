@@ -78,7 +78,15 @@
 .footer {
   width: 100%;
   height: 4rem;
-  background-color: #292929; }
+  background-color: #292929;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white; }
+  .footer > .icons {
+    margin-right: 4rem; }
+    .footer > .icons > .fa-2x {
+      margin: 0 2rem; }
 
 .Results {
   display: flex;

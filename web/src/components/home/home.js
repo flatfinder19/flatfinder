@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import landing from './landing.jpeg';
 import random from './random.jpg';
+import random2 from './random2.jpg';
+import random3 from './random3.jpg';
 
 class Home extends Component {
   state = {  }
@@ -30,13 +32,13 @@ class Home extends Component {
         <div className="Home-description">
           <p className="Home-description-title">About</p>
           <p className="Home-description-details">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          In the market for a new Flat? Do you have one or more destinations 
+          in mind? Flatfinder can find and keep track of the options that fit 
+          your livability needs! Keep track of available Flats that will accept 
+          your pet, have parking and laundry facilities, or are near landmarks that 
+          your prefer. Specify your cities and preferred Flat and location options, 
+          then check back in whenever you would like to see the 
+          current options available at all of your locations! 
           </p>
         </div>
       <div style={{ backgroundColor: '#F5F5F5'}}>
@@ -50,46 +52,49 @@ class Home extends Component {
               </div>
               <hgroup className="speech-bubble">
                 <p>
-                  Hey mann heres the bubble Hey mann heres the bubbleHey mann
-                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  This app made moving to a new city much easier. 
+                  It kept track of possible appartments for me that had all 
+                  the living features I was looking for. When it came move
+                   I knew what my options were. 
                 </p>
-                <p>Name, lastName</p>
+                <p>Danielle Phillips</p>
               </hgroup>
             </div>    
           <div className="Home-testimonials-users">
             <div>
-              <img className="Home-testimonials-img" src={random} alt="img" />
+              <img className="Home-testimonials-img" src={random2} alt="img" />
             </div>
             <hgroup className="speech-bubble">
               <p>
-                Hey mann heres the bubble Hey mann heres the bubbleHey mann
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                Thank you Flatfinder for helping me find the best living spaces. I work in contract positions 
+                and when a new opportunity comes up now I can take it, and I can be ready 
+                for it with regard to my moving options in new cities. Now I can find what I need faster and stress a little less!
                 </p>
-              <p>Name, lastName</p>
+              <p>Tim Wong</p>
             </hgroup>
           </div>
           <div className="Home-testimonials-users">
             <div>
-              <img className="Home-testimonials-img" src={random} alt="img" />
+              <img className="Home-testimonials-img" src={random3} alt="img" />
             </div>
             <hgroup className="speech-bubble">
               <p>
-                Hey mann heres the bubble Hey mann heres the bubbleHey mann
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                I am graduating school soon. I have a dog, I like to bike and I have a car. There 
+                are a few cites I am applying for jobs in and it is nice to know I can keep track 
+                of what is available without having to re-seach all of these locations when the 
+                time to move is upon me. 
                 </p>
-              <p>Name, lastName</p>
+              <p>Gabriel Martino</p>
             </hgroup>
           </div>
         </div>
         </div>
         <div className="footer">
-
+        <div className="icons">
+        <i class="fas fa-at fa-2x"></i>
+        <i class="fab fa-facebook-f fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        </div>
         </div>
       </div>
   }
