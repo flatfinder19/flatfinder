@@ -269,8 +269,6 @@
   margin-left: 1.5rem; }
   .options p {
     cursor: pointer; }
-  .options > p > i {
-    font-family: 'Montserrat',sans-serif; }
 
 .Map {
   flex-grow: 1;

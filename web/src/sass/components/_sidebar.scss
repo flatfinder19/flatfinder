@@ -16,8 +16,10 @@
     align-items: center;
     margin-top: 0;
     margin-left: -1rem;
+  }
 
-    // background-color:$color-logo-bg;
+  &-categories {
+   
   }
 }
 
@@ -32,8 +34,8 @@
   & p {
     cursor: pointer;
   }
-  &>p>i {
-    font-family: 'Montserrat',sans-serif;
+  // &>p>i {
+  //   font-family: 'Montserrat',sans-serif;
 
-  }
+  // }
 }

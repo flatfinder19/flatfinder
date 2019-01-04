@@ -69,10 +69,11 @@ class Provider extends Component {
   };
 
   logoutUser = () => {
-    
+    localStorage.removeItem('token');
+    this.props.history.push('/home')
   }
 
-  setLocation = ()=> {
+  setLocation = () => {
     console.log(navigator.gelocation)
   //look at example in the docs and then
     this.setState(); //response from geolocation 
@@ -100,6 +101,7 @@ class Provider extends Component {
         value={{
           globalData : this.state,
           loginUser: this.loginUser,
+          logoutUser: this.logoutUser,
           handleInput: this.handleInputChange
         }}
       >

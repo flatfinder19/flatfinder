@@ -5,7 +5,7 @@ export default ComposedComponent => {
   class RequireAuthentication extends Component {
     componentDidMount() {
       console.log(this.props);
-      const token = localStorage.getItem('id');
+      const token = localStorage.getItem('token');
       if (token) {
         this.props.history.push('/');
       }
