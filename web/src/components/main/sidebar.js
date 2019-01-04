@@ -2,42 +2,6 @@ import React, { Component } from 'react';
 import FlatFeatures from './flatFeatures';
 import classNames from "classnames";
 
-<<<<<<< HEAD
-const style= {
-  marginRight: '1rem',
-  background: 'EA4336'
- }
-
-class Map extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.addActiveClass= this.addActiveClass.bind(this);
-//     this.state = {
-//         active: false,
-//     };
-// }
-// toggleClass() {
-//     const currentState = this.state.active;
-//     this.setState({ active: !currentState });
-// };
-// state = {cats: false}
-//   change () => {
-//     switch(case):
-//     // cats-change the state of cat true
-//     // we change the color of cats 
-//   }
-  state = {}
-  render() { 
-    function toggle_visibility(id) {
-      let e = document.getElementById(id);
-      console.log(e)
-      if (e.color== '#EA4336' || e.style.color=='') e.style.color = 'green';
-      else e.style.display = '#EA4336';
-    }
-    
-    let style;
-
-=======
 // const style= {
 //   marginRight: '1rem', 
 //   background: 'EA4336'
@@ -93,7 +57,6 @@ class Map extends Component {
       color: 'blue',
       cursor: 'pointer',
     }
->>>>>>> 4632a4d0b1f155cd4bae51d9095b27a51d9bc6f0
     return ( 
 
       <div className="Sidebar">
@@ -101,17 +64,6 @@ class Map extends Component {
           <h4>Flatfinder</h4>
         </div>
         <div className='options'>
-<<<<<<< HEAD
-          <p  className='icon-color' onclick="toggle_visibility('clock')"> <i style={style} id='clock' className="fas fa-clock icon-color"></i>Posted today</p>
-          <p className={this.state.active && 'active'}
-      onClick={ () => this.setState({active: !this.state.active}) }><i style={style} className= "fas fa-dog"></i>Dogs</p>
-         
-            <p><i style={style} className= "fas fa-cat icon-color"></i>Cats</p>
-       
-          <p><i style={style} className= "fas fa-couch icon-color"></i>Furnished</p>
-          <p><i style={style} className= "fas fa-smoking-ban icon-color"></i>No Smoking</p>
-          <p><i style={style} className= "fas fa-wheelchair icon-color"></i>Accessible</p>
-=======
           <p style={{color: '#616161', fontSize:'13px'}}>Options</p>
           <p onClick={() => this.active('posted')}>
             <i style={this.state.posted ? Activestyle 
@@ -149,7 +101,6 @@ class Map extends Component {
               : style} className= "fas fa-car"></i>
               Parking
             </p>
->>>>>>> 4632a4d0b1f155cd4bae51d9095b27a51d9bc6f0
           <p style={{color: '#616161', fontSize:'13px'}}>Advanced Options</p>
         </div>
       </div>
