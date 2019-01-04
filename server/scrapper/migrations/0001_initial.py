@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
             name='CityName',
             fields=[
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
-                ('code', models.CharField(max_length=10)),
+                ('code', models.CharField(max_length=60)),
                 ('name', models.CharField(max_length=60)),
                 ('country', models.CharField(default='United States', max_length=60)),
                 ('latitude', models.CharField(max_length=60)),
