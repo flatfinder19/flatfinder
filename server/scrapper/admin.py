@@ -26,3 +26,7 @@ admin.site.register(
 # Register your models here.
 admin.site.register(
     (SubAreaName, UserSubAreaName))
+
+
+admin.site.register(
+    (SearchCreteria, PersonalSearchCreteria,))
