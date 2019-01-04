@@ -45,7 +45,7 @@ class App extends Component {
                   path="/register"
                   render={props => <Register {...props} context={context} />}
                 /> */}
-                <Route path="/login" component={RequireAuth(Login)} />
+                <Route path="/login" component={(Login)} />
                 <Route path="/home" component={(Home)} />
                 <Route path="/signup" component={RequireAuth(Signup)} />
                 <PrivateRoute path="/results" component={Results} />

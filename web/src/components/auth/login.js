@@ -13,6 +13,14 @@ class SignIn extends Component {
   //   e.preventDefault();
   //   this.props.loginGoogle();
   // };
+
+  componentDidMount() {
+    const token = localStorage.getItem('token');
+    if (token) {
+      this.props.history.push('/');
+    }
+  }
+
   
   render() {
     return (

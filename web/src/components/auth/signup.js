@@ -9,20 +9,13 @@ class SignIn extends Component {
     password: '',
   };
 
-  loginUser = e => {
-    e.preventDefault();
-    this.props.history.push('/');
-  };
-
-  loginGoogle = e => {
-    e.preventDefault();
-    this.props.loginGoogle();
-  };
-
-  handleInputChange = e => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
-  };
+  componentDidMount() {
+    const token = localStorage.getItem('token');
+    if (token) {
+      this.props.history.push('/');
+    }
+  }
+  
   render() {
     return (
       <div className="App-sign">
