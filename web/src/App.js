@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AuthProvider, { AuthContext } from './contexts/AuthProvider';
-
+import axios from 'axios';
 import Map from './components/main/main';
 import Login from './components/auth/login';
 
