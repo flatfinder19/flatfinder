@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FlatFeatures from './flatFeatures';
-
+import classNames from "classnames";
 
 // const style= {
 //   marginRight: '1rem', 
@@ -58,9 +58,10 @@ class Map extends Component {
       cursor: 'pointer',
     }
     return ( 
+
       <div className="Sidebar">
         <div className="Sidebar-title">
-          <p>Flatfinder</p>
+          <h4>Flatfinder</h4>
         </div>
         <div className='options'>
           <p style={{color: '#616161', fontSize:'13px'}}>Options</p>
