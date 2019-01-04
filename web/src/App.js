@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Consumer, AuthProvider } from "./contexts/AuthProvider";
-import { withRouter, Redirect} from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 import Map from "./components/main/main";
 import Results from "./components/results/results";
