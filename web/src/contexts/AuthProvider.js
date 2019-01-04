@@ -54,8 +54,8 @@ class Provider extends Component {
     e.preventDefault();
     const user = {username: this.state.username, password: this.state.password}
     try {
-      const response = await axios.post('https://flatfinderapp.herokuapp.com/api-token-auth/', user);
-      const token = await response.data.token;
+      const response = await axios.post('https://flatfinderapp.herokuapp.com/auth/user/', user);
+      const token = await response.data;
       if (token) {
         localStorage.setItem('token', JSON.stringify(token));
         this.setState({ requestError: false })
@@ -68,7 +68,12 @@ class Provider extends Component {
     }
   };
 
-  setLocation = ()=> {
+  logoutUser = () => {
+    localStorage.removeItem('token');
+    this.props.history.push('/home')
+  }
+
+  setLocation = () => {
     console.log(navigator.gelocation)
   //look at example in the docs and then
     this.setState(); //response from geolocation 
@@ -96,6 +101,8 @@ class Provider extends Component {
         value={{
           globalData : this.state,
           loginUser: this.loginUser,
+          logoutUser: this.logoutUser,
+          signupUser: this.signupUser,
           handleInput: this.handleInputChange
         }}
       >

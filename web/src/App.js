@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {  Route } from "react-router-dom";
 import { Consumer, AuthProvider } from "./contexts/AuthProvider";
 import { Redirect } from 'react-router-dom';
 
@@ -9,6 +9,7 @@ import Results from "./components/results/results";
 import Login from "./components/auth/login";
 import Signup from "./components/auth/signup";
 import Home from "./components/home/home";
+import RequireAuth from './components/requireAuth';
 
 const PrivateRoute = ({ component: Comp, ...rest }) => (
   <Route
@@ -44,9 +45,9 @@ class App extends Component {
                   path="/register"
                   render={props => <Register {...props} context={context} />}
                 /> */}
-                <Route path="/login" component={Login} />
-                <Route path="/home" component={Home} />
-                <Route path="/signup" component={Signup} />
+                <Route path="/login" component={(Login)} />
+                <Route path="/home" component={(Home)} />
+                <Route path="/signup" component={(Signup)} />
                 <PrivateRoute path="/results" component={Results} />
                 <PrivateRoute exact path="/" component={Map} />
               </React.Fragment>
