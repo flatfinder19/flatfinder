@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-from rest_framework import routers
+from rest_framework import routers, generics
 from rest_framework.authtoken import views
 
 from scrapper.api import *
+from rest_framework_jwt.views import obtain_jwt_token, verify_jwt_token, refresh_jwt_token
+from django.conf import settings
+from django.views.static import serve
+from django.conf.urls import url
+from scrapper.views import UserList, UpdatePassword
 
 router = routers.DefaultRouter()
 router.register(r'cities', CityNameViewSet)
@@ -29,5 +34,10 @@ router.register(r'personalsearches', PersonalSearchResultViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    re_path(r'^api-token-auth/', views.obtain_auth_token)
+    #re_path(r'^api-token-auth/', views.obtain_auth_token)
+    re_path(r'^api-token-auth/', obtain_jwt_token),
+    re_path(r'^api-token-verify/', verify_jwt_token),
+    path('user_admin/', include('scrapper.urls')),
+    url('^api/passwordchange/', UpdatePassword.as_view()),
+    re_path(r'^api-token-refresh/', refresh_jwt_token),
 ]

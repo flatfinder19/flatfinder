@@ -12,6 +12,7 @@ dj-database-url = "*"
 gunicorn = "*"
 whitenoise = "*"
 "psycopg2-binary" = "*"
+djangorestframework-jwt = "*"
 
 [dev-packages]
 
