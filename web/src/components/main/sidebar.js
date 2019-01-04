@@ -54,7 +54,6 @@ class Map extends Component {
               : style} className= "fas fa-dog"></i>
             Dogs
           </p>
-          <p></p>
           <p style={{color: '#616161', fontSize:'13px'}}>Advanced Options</p>
         </div>
        <FlatFeatures/>

@@ -9,6 +9,10 @@ class Navigation extends Component {
         <div className='Navigation'>
           <div className="Navigation-box">
             <p className="Navlogo">Flatfinder</p>
+            <div>
+              <Link to='/home'><p>Home</p></Link>
+              <Link to='/login'><p>Logout</p></Link>
+            </div>
           </div>
         </div>
         <div style={{marginLeft: '2rem', fontSize: '1.8rem'}}>

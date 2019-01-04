@@ -29,10 +29,21 @@
   justify-content: flex-start;
   align-items: center; }
   .Navigation-box {
-    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     color: white;
     font-size: 2rem;
     margin-left: 2rem; }
+    .Navigation-box div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 30%;
+      color: #616161;
+      font-size: 1.6rem; }
+      .Navigation-box div p {
+        cursor: pointer; }
 
 .Modal {
   z-index: 2;
@@ -180,6 +191,8 @@
   align-items: flex-start;
   font-size: 1.6rem;
   margin-left: 1.5rem; }
+  .options p {
+    cursor: pointer; }
 
 .Map {
   flex-grow: 1;

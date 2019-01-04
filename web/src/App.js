@@ -6,6 +6,7 @@ import Map from "./components/main/main";
 import Results from "./components/results/results";
 import Login from "./components/auth/login";
 import Signup from "./components/auth/signup";
+import Home from "./components/home/home";
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
                   render={props => <Register {...props} context={context} />}
                 /> */}
                 <Route path="/login" component={Login} />
+                <Route path="/home" component={Home} />
                 <Route path="/signup" component={Signup} />
                 <Route path="/results" component={Results} />
                 <Route exact path="/" component={Map} />
