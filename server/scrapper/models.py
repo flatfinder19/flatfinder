@@ -12,6 +12,8 @@ class CityName(models.Model):
     country = models.CharField(max_length=60, default="United States")
     latitude = models.CharField(max_length=60, blank=False)
     longitude = models.CharField(max_length=60, blank=False)
+    area_key = models.CharField(max_length=60, blank=True)
+    area_name = models.CharField(max_length=60, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
 
