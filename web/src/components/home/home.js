@@ -17,9 +17,11 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        {/* <div> */}
-          <img src={landing} alt="SideLogo" className="Home-pic"/>
-        {/* </div> */}
+        <div className="Home-main">
+          <p className="Home-main-text">Live somewhere you Love</p>
+          <img src={landing} alt="SideLogo" className="Home-main-image"/>
+
+        </div>
         <div className="Home-description">
         </div>
         <div className="Home-testimonials">

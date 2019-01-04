@@ -4,9 +4,20 @@
   .Main div:nth-child(2) {
     width: 99%; }
 
-.Home-pic {
-  width: 100%;
-  clip: rect(100px, 600px, 200px, 100px); }
+.Home-main {
+  position: relative; }
+  .Home-main-text {
+    left: 35%;
+    top: 30%;
+    position: absolute;
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 1px 1px #000000;
+    background-color: rgba(91, 91, 91, 0.187);
+    border-radius: 5%; }
+  .Home-main-image {
+    width: 100%;
+    clip: rect(100px, 600px, 200px, 100px); }
 
 .Home-description {
   height: 40rem;
