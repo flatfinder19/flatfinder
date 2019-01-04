@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FlatFeatures from './flatFeatures';
+import { withRouter } from 'react-router-dom';
 
 import { Consumer } from "../../contexts/AuthProvider";
 
@@ -104,7 +105,8 @@ class Map extends Component {
                   Parking
                 </p>
               <p style={{color: '#616161', fontSize:'13px'}}>Advanced Options</p>
-              <p onClick={() => context.logoutUser()} style={{fontSize: '1.6rem', marginTop: '7rem'}}>Signout</p>
+              <p style={{color: '#616161', fontSize: '1.6rem', marginTop: '15rem'}}onClick={() => context.logoutUser()}>Signout</p>
+              <p style={{color: '#616161', fontSize: '1.6rem'}}onClick={() => this.props.history.push('/home')}>Home</p>
             </div>
           </div>
         </div>
@@ -114,4 +116,4 @@ class Map extends Component {
   }
 }
  
-export default Map;
+export default withRouter(Map);
