@@ -74,6 +74,7 @@ class Map extends Component {
               : style} className= "fas fa-dog"></i>
             Dogs
           </p>
+
           <p onClick={() => this.active('cats')}>
             <i style={this.state.cats ? Activestyle 
               : style}

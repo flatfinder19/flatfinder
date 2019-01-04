@@ -9,13 +9,25 @@
 
   // z-index: 1;
   &-box {
-    // height: 100%;
-    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     color: white;
     font-size: 2rem;
     margin-left: 2rem;
-    // background-color: red;
-    
+      & div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // background-color: red;
+        width: 30%;
+        color: $color-grey;
+        font-size: 1.6rem;
+
+        & p {
+          cursor: pointer;
+        }
+      }
   }
 }
 .Navlogo {
