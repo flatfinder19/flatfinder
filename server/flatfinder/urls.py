@@ -10,7 +10,7 @@ Class-based views
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
 Including another URLconf
-    1. Import the include() function: from django.urls import include, path
+    1. Import the include() function: from django.urls import include,path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
@@ -18,10 +18,13 @@ from django.urls import path, include, re_path
 from rest_framework import routers
 from rest_framework.authtoken import views
 
-from scrapper.api import PersonalSearchResultViewSet
+from scrapper.api import *
 
 router = routers.DefaultRouter()
-router.register(r'searches', PersonalSearchResultViewSet)
+router.register(r'cities', CityNameViewSet)
+router.register(r'usercities', UserCityNameViewSet)
+router.register(r'usersubareas', UserSubAreaNameViewSet)
+router.register(r'personalsearches', PersonalSearchResultViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
