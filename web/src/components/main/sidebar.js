@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import FlatFeatures from './flatFeatures';
-import classNames from "classnames";
+import { withRouter } from 'react-router-dom';
+
+import { Consumer } from "../../contexts/AuthProvider";
 
 // const style= {
 //   marginRight: '1rem', 
@@ -57,55 +59,61 @@ class Map extends Component {
       color: 'blue',
       cursor: 'pointer',
     }
-    return ( 
-
-      <div className="Sidebar">
-        <div className="Sidebar-title">
-          <h4>Flatfinder</h4>
+    return (
+      <Consumer>
+        {context => (
+        <div className="Sidebar">
+          <div className="Sidebar-title">
+            <p>Flatfinder</p>
+          </div>
+          <div className="Sidebar-categories">
+            <div className='options'>
+              <p style={{color: '#616161', fontSize:'13px'}}>Options</p>
+              <p onClick={() => this.active('posted')}>
+                <i style={this.state.posted ? Activestyle 
+                  : style}
+                  className="fas fa-clock"></i>
+                Posted today</p>
+              <p onClick={() => this.active('dogs')}>
+                <i style={this.state.dogs ? Activestyle 
+                  : style} className= "fas fa-dog"></i>
+                Dogs
+              </p>
+              <p onClick={() => this.active('cats')}>
+                <i style={this.state.cats ? Activestyle 
+                  : style}
+                  className="fas fa-cat"></i>
+                Cats</p>
+              <p onClick={() => this.active('furnished')}>
+                <i style={this.state.furnished ? Activestyle 
+                  : style} className= "fas fa-couch"></i>
+                Furnished
+              </p>
+              <p onClick={() => this.active('non-smoking')}>
+                <i style={this.state.nonSmoking ? Activestyle 
+                  : style} className= "fas fa-smoking-ban"></i>
+                Non-Smoking
+              </p>
+              <p onClick={() => this.active('accessible')}>
+                <i style={this.state.accessible ? Activestyle 
+                  : style} className= "fas fa-wheelchair"></i>
+                  Accessible
+                </p>
+                <p onClick={() => this.active('parking')}>
+                <i style={this.state.parking ? Activestyle 
+                  : style} className= "fas fa-car"></i>
+                  Parking
+                </p>
+              <p style={{color: '#616161', fontSize:'13px'}}>Advanced Options</p>
+              <p style={{color: '#616161', fontSize: '1.6rem', marginTop: '15rem'}}onClick={() => context.logoutUser()}>Signout</p>
+              <p style={{color: '#616161', fontSize: '1.6rem'}}onClick={() => this.props.history.push('/home')}>Home</p>
+            </div>
+          </div>
         </div>
-        <div className='options'>
-          <p style={{color: '#616161', fontSize:'13px'}}>Options</p>
-          <p onClick={() => this.active('posted')}>
-            <i style={this.state.posted ? Activestyle 
-              : style}
-              className="fas fa-clock"></i>
-            Posted today</p>
-          <p onClick={() => this.active('dogs')}>
-            <i style={this.state.dogs ? Activestyle 
-              : style} className= "fas fa-dog"></i>
-            Dogs
-          </p>
-
-          <p onClick={() => this.active('cats')}>
-            <i style={this.state.cats ? Activestyle 
-              : style}
-              className="fas fa-cat"></i>
-            Cats</p>
-          <p onClick={() => this.active('furnished')}>
-            <i style={this.state.furnished ? Activestyle 
-              : style} className= "fas fa-couch"></i>
-            Furnished
-          </p>
-          <p onClick={() => this.active('non-smoking')}>
-            <i style={this.state.nonSmoking ? Activestyle 
-              : style} className= "fas fa-smoking-ban"></i>
-            Non-Smoking
-          </p>
-          <p onClick={() => this.active('accessible')}>
-            <i style={this.state.accessible ? Activestyle 
-              : style} className= "fas fa-wheelchair"></i>
-              Accessible
-            </p>
-            <p onClick={() => this.active('parking')}>
-            <i style={this.state.parking ? Activestyle 
-              : style} className= "fas fa-car"></i>
-              Parking
-            </p>
-          <p style={{color: '#616161', fontSize:'13px'}}>Advanced Options</p>
-        </div>
-      </div>
+      )}
+      </Consumer>
      );
   }
 }
  
-export default Map;
+export default withRouter(Map);

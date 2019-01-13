@@ -69,7 +69,7 @@
   width: 0;
   height: 0;
   border: 24px solid transparent;
-  border-right-color: #e4843b;
+  border-right-color: #EA4336;
   border-left: 0;
   border-bottom: 0;
   margin-top: -12px;
@@ -275,6 +275,8 @@
   align-items: flex-start;
   font-size: 1.6rem;
   margin-left: 1.5rem; }
+  .options p {
+    cursor: pointer; }
 
 .Map {
   flex-grow: 1;

@@ -1,5 +1,5 @@
 # FlatFinder
-This app scrapes CL data to help a user find preferable living options in specified cities. The scraping function utilizes CL citiy data and puts together a database from which user can filter though housing and location data to produce query results that fit there livability requests. 
+This app scrapes CL data to help a user find preferable living options in specified cities. The scraping function utilizes CL city data and puts together a database from which user can filter though housing and location data to produce query results that fit there livability requests. 
 
 ## Frontend: 
 Built out using ReactJS and React Context. Google API is implemented. SASS was used for css styling. The App is deployed on Heroku. 

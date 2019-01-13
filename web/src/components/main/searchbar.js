@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { Col, Fa, FormInline } from "mdbreact";
+import { Fa } from "mdbreact";
 import { ToastContainer, toast } from 'react-toastify';
 
 class Searchbar extends React.Component {

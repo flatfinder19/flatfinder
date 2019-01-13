@@ -1,81 +1,59 @@
 from django.shortcuts import render
-from django.shortcuts import render
-from django.http import HttpResponseRedirect
-from django.contrib.auth.models import User, Group
-from rest_framework import permissions, status
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from rest_framework.views import APIView
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from .serializers import UserSerializer, UserSerializerWithToken, ChangePasswordSerializer
 
-from rest_framework import generics
-
-from django.db.models import Sum
+from . models import CityName
 
 
-from django.views.generic.list import ListView
-# Create your views here.
+def index(request):
+    page = request.GET.get("page")
+    if page is None:
+        page = 1
+    else:
+        page = int(page)
 
+    display = request.GET.get("display")
+    if display is None:
+        display = 10
+    else:
+        display = int(display)
 
-# Create your views here.
-@api_view(['GET'])
-def current_user(request):
-    """
-    Determine the current user by their token, and return their data
-    """
+    query = CityName.objects
 
-    def get(self, request, format=Json):
-        serializer = UserSerializerWithToken(data=request.data)
-        if serializer.is_valid():
-            return Response(serializer.data)
+    total = query.count()
+    total_pages = total // display
 
+    # check that the page url is valid
+    if page > total_pages or page < 1:
+        error = True
+    else:
+        error = False
 
-class UserList(APIView):
-    """
-    Create a new user. It's called 'UserList' because normally we'd have a get
-    method here too, for retrieving a list of all User objects.
-    """
+    first_page = True if page == 1 else False
+    last_page = True if page == total_pages else False
 
-    permission_classes = (permissions.AllowAny,)
+    start = display * (page - 1)
+    end = start + display
 
-    def post(self, request, format=None):
-        serializer = UserSerializerWithToken(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    '''
-    @receiver(post_save, sender=User)
-    def create_user_profile(sender, instance, created, **kwargs):
-        if created:
-            instance.groups.add(Group.objects.get(name=''))
-'''
+    cities = query.order_by("name")[start:end]
 
+    # if first_page:
+    #   page_links = [{"page_no": page_no, "active": False} for page_no in range(2, 11)]
+    # elif last_page:
+    #   if total_pages > 8:
+    #     linksBefore = total_pages - 10
+    #   else:
+    #     linksBefore = 0
+    #   page_links = [{"page_no": page_no, "active": False}
+    #                 for page_no in range(linksBefore, total_pages)]
 
-class UpdatePassword(APIView):
-    """
-    An endpoint for changing password.
-    """
-    permission_classes = (permissions.IsAuthenticated, )
+    context = {
+        "cities": cities,
+        # "page_links": [p for p in range()]
+        "display": display,
+        "page": page,
+        "first_page": first_page,
+        "last_page": last_page,
+        "total_pages": total_pages,
+        "error": error
+    }
 
-    def get_object(self, queryset=None):
-        return self.request.user
-
-    def put(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        serializer = ChangePasswordSerializer(data=request.data)
-
-        if serializer.is_valid():
-            # Check old password
-            old_password = serializer.data.get("old_password")
-            if not self.object.check_password(old_password):
-                return Response({"old_password": ["Wrong password."]},
-                                status=status.HTTP_422_UNPROCESSABLE_ENTITY)
-            # set_password also hashes the password that the user will get
-            self.object.set_password(serializer.data.get("new_password"))
-            self.object.save()
-            return Response(status=status.HTTP_204_NO_CONTENT)
-
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    return render(request, 'cities/index.html', context)
