@@ -9,7 +9,7 @@ djangorestframework-jwt==1.11.0
 gunicorn==19.9.0
 idna==2.8
 psycopg2-binary==2.7.6.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 python-craigslist==1.0.6
 python-decouple==3.1
 pytz==2018.7
